@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
+import Comodo from './pages/Comodo'
 
 export const ROUTES = [
   { path: '/', component: Home },
+  { path: '/comodo', component: Comodo}
 ];
 
 class MyHomeBrewRouter extends Component {
