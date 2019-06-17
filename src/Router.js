@@ -20,7 +20,7 @@ class MyHomeBrewRouter extends Component {
       <Switch>
         {/* @TODO: Criação de rotas provisórias, utilizar (https://reacttraining.com/react-router/web/example/route-config) ?  */}
         {this.createRoutes(ROUTES)}
-    </Switch>
+      </Switch>
     );
   }
 }
