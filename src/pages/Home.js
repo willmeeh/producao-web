@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <img className="house-external" src={image} />
+                <img className="house-external" src={image} alt="fuck"/>
             </div>
         );
     }
