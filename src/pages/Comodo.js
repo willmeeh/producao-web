@@ -31,7 +31,7 @@ class Comodo extends Component {
         console.log('nomeComodo', nomeComodo);
 
         return (
-            <div>
+            <div style={{marginTop: '100px'}}>
                 <Row gutter={8}>
                     <Col span={16}>
                         <Row>
@@ -41,9 +41,9 @@ class Comodo extends Component {
                         </Row>
                         <Row>
                             <Col span={18}>
-                                <Card title="Descrição" bordered={false} style={{ width: 400, height: 200 }}>
+                                <Card title="Descrição" bordered={false} style={{ width: 500, height: 200 }}>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis malesuada dolor eu porta. Donec id urna ac metus feugiat rutrum eget nec nibh. Maecenas in sem vel metus ullamcorper pharetra. Sed vitae erat arcu. Integer porttitor, eros quis congue molestie, lorem mi pulvinar ante, vel ultricies eros nulla id risus.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis malesuada dolor eu porta. Donec id urna ac metus feugiat rutrum eget nec nibh. Maecenas in sem vel metus ullamcorper pharetra.
                                                 </p>
                                 </Card>
                             </Col>
