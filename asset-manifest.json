@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/producao-web/static/css/main.6ce013cc.chunk.css",
-    "main.js": "/producao-web/static/js/main.bf85154e.chunk.js",
-    "main.js.map": "/producao-web/static/js/main.bf85154e.chunk.js.map",
+    "main.css": "/producao-web/static/css/main.d4cb773d.chunk.css",
+    "main.js": "/producao-web/static/js/main.b0adf206.chunk.js",
+    "main.js.map": "/producao-web/static/js/main.b0adf206.chunk.js.map",
     "runtime~main.js": "/producao-web/static/js/runtime~main.8eb61003.js",
     "runtime~main.js.map": "/producao-web/static/js/runtime~main.8eb61003.js.map",
     "static/css/2.59ca6ef4.chunk.css": "/producao-web/static/css/2.59ca6ef4.chunk.css",
-    "static/js/2.b27edd55.chunk.js": "/producao-web/static/js/2.b27edd55.chunk.js",
-    "static/js/2.b27edd55.chunk.js.map": "/producao-web/static/js/2.b27edd55.chunk.js.map",
+    "static/js/2.63d3a82f.chunk.js": "/producao-web/static/js/2.63d3a82f.chunk.js",
+    "static/js/2.63d3a82f.chunk.js.map": "/producao-web/static/js/2.63d3a82f.chunk.js.map",
     "index.html": "/producao-web/index.html",
-    "precache-manifest.4fc51a40a6fd02e2f31a638a3db0322a.js": "/producao-web/precache-manifest.4fc51a40a6fd02e2f31a638a3db0322a.js",
+    "precache-manifest.43a3d2b03084d273c8dfb45e915eca3e.js": "/producao-web/precache-manifest.43a3d2b03084d273c8dfb45e915eca3e.js",
     "service-worker.js": "/producao-web/service-worker.js",
     "static/css/2.59ca6ef4.chunk.css.map": "/producao-web/static/css/2.59ca6ef4.chunk.css.map",
-    "static/css/main.6ce013cc.chunk.css.map": "/producao-web/static/css/main.6ce013cc.chunk.css.map",
-    "static/media/comodos.svg": "/producao-web/static/media/comodos.a55a5673.svg",
+    "static/css/main.d4cb773d.chunk.css.map": "/producao-web/static/css/main.d4cb773d.chunk.css.map",
     "static/media/img-casa-cima.jpeg": "/producao-web/static/media/img-casa-cima.f163ecff.jpeg",
     "static/media/solitaria-logo.png": "/producao-web/static/media/solitaria-logo.2ed7f03b.png"
   }
