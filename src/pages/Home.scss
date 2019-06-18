@@ -1,21 +1,6 @@
 .home-page {
     font-weight: 900 !important;
 
-    button {
-        background: rgba(185, 185, 185, 0.5);
-        font-weight: 900 !important;
-        border-color: #000;
-
-        height: 2.5em;
-
-        font-size: 2em;
-
-        :hover {
-            background: rgba(0, 0, 0, 0.5) !important;
-            color: #fff;
-        }
-    }
-
     .house-external {
         min-height: 100%;
         min-width: 1024px;

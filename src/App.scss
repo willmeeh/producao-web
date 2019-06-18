@@ -1,6 +1,26 @@
+button {
+  background: rgba(185, 185, 185, 0.5) !important;
+  font-weight: 900 !important;
+  border-color: #000;
+
+  height: 2.5em !important;
+  font-size: 2em !important;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff !important;
+    border-color: #fff !important;
+
+  }
+  &.ant-btn:focus {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+
+}
 .App {
   text-align: center;
-  overflow: hidden;
 }
 
 .App-logo {
