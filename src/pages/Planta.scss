@@ -1,8 +1,11 @@
 .planta-page {
     font-weight: 900 !important;
+    text-align: center;
 
     .planta-external {
         filter: brightness(40%);
+        height: 100%;
+        margin-top: 100px;
     }
 
     .botao-iniciar-tour {

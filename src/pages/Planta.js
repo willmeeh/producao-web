@@ -11,8 +11,8 @@ class Planta extends Component {
     render() {
         return (
             <div>
-                <div className="home-page">
-                    <img className="house-external" src={image} alt="fuck" />
+                <div className="planta-page">
+                    <img className="planta-external" src={image} alt="fuck" />
                 </div>
             </div>
         );
