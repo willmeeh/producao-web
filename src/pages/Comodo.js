@@ -27,7 +27,7 @@ const data = [
 class Comodo extends Component {
     render() {
         return (
-            <div>
+            <div style={{ marginTop: '70px' }}>
                 <Row gutter={8}>
                     <Col span={16}>
                         <Row>
@@ -37,9 +37,9 @@ class Comodo extends Component {
                         </Row>
                         <Row>
                             <Col span={18}>
-                                <Card title="Descrição" bordered={false} style={{ width: 400, height: 200 }}>
+                                <Card title="Descrição" bordered={false} style={{ margin: 20, width: 600, height: 150 }}>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis malesuada dolor eu porta. Donec id urna ac metus feugiat rutrum eget nec nibh. Maecenas in sem vel metus ullamcorper pharetra. Sed vitae erat arcu. Integer porttitor, eros quis congue molestie, lorem mi pulvinar ante, vel ultricies eros nulla id risus.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis malesuada dolor eu porta. Donec id urna ac metus feugiat rutrum eget nec nibh. Maecenas in sem vel metus ullamcorper pharetra. Sed vitae erat arcu. Integer porttitor.
                                                 </p>
                                 </Card>
                             </Col>
