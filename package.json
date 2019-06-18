@@ -1,5 +1,6 @@
 {
   "name": "producao-web",
+  "homepage": "https://willmeeh.github.io/producao-web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
