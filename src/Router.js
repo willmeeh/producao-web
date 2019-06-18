@@ -8,7 +8,7 @@ const { Header, Content, Footer } = Layout;
 
 export const ROUTES = [
   { path: '/', component: Home },
-  { path: '/comodo', component: Comodo },
+  { path: '/comodo/:nomeComodo?', component: Comodo},
   { path: '/plata', component: Planta}
 ];
 
