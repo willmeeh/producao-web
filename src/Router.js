@@ -9,7 +9,7 @@ const { Header, Content, Footer } = Layout;
 export const ROUTES = [
   { path: '/', component: Home },
   { path: '/comodo/:nomeComodo?', component: Comodo},
-  { path: '/plata', component: Planta}
+  { path: '/planta', component: Planta}
 ];
 
 class MyHomeBrewRouter extends Component {
