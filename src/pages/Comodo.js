@@ -24,14 +24,29 @@ const data = [
     },
 ];
 
+const comodos = {
+    cozinha: {
+        backgroundImage: 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/cozinha.jpeg'
+    },
+    quartoMonique: {
+        backgroundImage: 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/quarto-monique.jpeg'
+    },
+    // quartoMonique: {
+    //     backgroundImage: 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/quarto-monique.jpeg'
+    // }
+};
+
 class Comodo extends Component {
     render() {
         const { nomeComodo } = this.props.match.params;
-        
+        const { backgroundImage } = comodos[nomeComodo]
+
         console.log('nomeComodo', nomeComodo);
+        console.log('backgroundImage', backgroundImage);
 
         return (
             <div style={{marginTop: '100px'}}>
+                <img className="comodo-background-image" src={backgroundImage} alt="alt"/>
                 <Row gutter={8}>
                     <Col span={16}>
                         <Row>
@@ -55,18 +70,20 @@ class Comodo extends Component {
                         </Row>
                     </Col>
                     <Col span={5}>
-                        <List
-                            itemLayout="horizontal"
-                            dataSource={data}
-                            renderItem={item => (
-                                <List.Item>
-                                    <List.Item.Meta
-                                        title={<a><Icon type={item.icon} />{item.title}</a>}
-                                        description="Esse vídeo apresenta o momento em que o personagem."
-                                    />
-                                </List.Item>
-                            )}
-                        />
+                        <Card title="Descrição" bordered={false} style={{ width: 400 }}>
+                            <List
+                                itemLayout="horizontal"
+                                dataSource={data}
+                                renderItem={item => (
+                                    <List.Item>
+                                        <List.Item.Meta
+                                            title={<a><Icon type={item.icon} />{item.title}</a>}
+                                            description="Esse vídeo apresenta o momento em que o personagem."
+                                        />
+                                    </List.Item>
+                                )}
+                            />
+                        </Card>
                     </Col>
                 </Row>
             </div >

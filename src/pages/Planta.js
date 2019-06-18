@@ -12,7 +12,7 @@ class Planta extends Component {
         return (
             <div>
                 <div className="planta-page">
-                    <img className="planta-external" src={image} alt="fuck" />
+                    <img className="planta-external" src={image} alt="unicorn" />
                 </div>
             </div>
         );
