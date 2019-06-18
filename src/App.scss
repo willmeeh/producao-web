@@ -1,7 +1,7 @@
 button {
   background: rgba(185, 185, 185, 0.5) !important;
   font-weight: 900 !important;
-  border-color: #000;
+  border-color: #000 !important;
 
   height: 2.5em !important;
   font-size: 2em !important;
@@ -21,6 +21,7 @@ button {
 }
 .App {
   text-align: center;
+
 }
 
 .App-logo {
