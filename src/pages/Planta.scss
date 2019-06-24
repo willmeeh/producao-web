@@ -3,7 +3,6 @@
     text-align: center;
 
     .planta-external {
-        filter: brightness(40%);
         height: 100%;
         margin-top: 100px;
     }
@@ -40,5 +39,9 @@
         left: 5%;
         bottom: 5%;
         width: 30%;
+    }
+
+    .cozinha-svg {
+        position: absolute;
     }
 }

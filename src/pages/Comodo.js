@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import './Comodo.scss';
-import { List, Card, Button, Col, Row, Icon, View } from 'antd';
-import { Player, ControlBar, VolumeMenuButton, PlaybackRateMenuButton } from 'video-react';
+import { List, Card, Button, Col, Row, Icon } from 'antd';
 import ReactPlayer from 'react-player'
-// import "../node_modules/video-react/dist/video-react.css"; // import css
+import { Link } from 'react-router-dom';
+
+import ImagemCozinha from '../images/cozinha.jpeg'
+import ImagemQuartoMonique from '../images/quarto-monique.jpeg'
+import ImagemQuartoNene from '../images/quarto-nene.jpeg'
+import ImagemQuartoTeresa from '../images/quarto-teresa.jpeg'
+import ImagemSalaEstar from '../images/sala-estar.jpeg'
+import ImagemSalaJantar from '../images/sala-jantar.jpeg'
 
 const data = [
     {
@@ -25,15 +31,24 @@ const data = [
 ];
 
 const comodos = {
-    cozinha: {
-        backgroundImage: 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/cozinha.jpeg'
+    'cozinha': {
+        backgroundImage: ImagemCozinha
     },
-    quartoMonique: {
-        backgroundImage: 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/quarto-monique.jpeg'
+    'quarto-monique': {
+        backgroundImage: ImagemQuartoMonique
     },
-    // quartoMonique: {
-    //     backgroundImage: 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/quarto-monique.jpeg'
-    // }
+    'quarto-nene': {
+        backgroundImage: ImagemQuartoNene
+    },
+    'quarto-teresa': {
+        backgroundImage: ImagemQuartoTeresa
+    },
+    'sala-estar': {
+        backgroundImage: ImagemSalaEstar
+    },
+    'sala-jantar': {
+        backgroundImage: ImagemSalaJantar
+    },
 };
 
 class Comodo extends Component {
@@ -63,9 +78,11 @@ class Comodo extends Component {
                                 </Card>
                             </Col>
                             <Col span={4}>
-                                <Button type="primary" icon="download" size={'large'}>
-                                    Voltar
+                                <Link to="/planta">
+                                    <Button type="primary" icon="download" size={'large'}>
+                                        Voltar
                                     </Button>
+                                </Link>
                             </Col>
                         </Row>
                     </Col>
