@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/producao-web/static/css/main.d926196f.chunk.css",
-    "main.js": "/producao-web/static/js/main.5436bf4e.chunk.js",
-    "main.js.map": "/producao-web/static/js/main.5436bf4e.chunk.js.map",
+    "main.css": "/producao-web/static/css/main.0efc3680.chunk.css",
+    "main.js": "/producao-web/static/js/main.6053a8fd.chunk.js",
+    "main.js.map": "/producao-web/static/js/main.6053a8fd.chunk.js.map",
     "runtime~main.js": "/producao-web/static/js/runtime~main.8eb61003.js",
     "runtime~main.js.map": "/producao-web/static/js/runtime~main.8eb61003.js.map",
     "static/css/2.59ca6ef4.chunk.css": "/producao-web/static/css/2.59ca6ef4.chunk.css",
-    "static/js/2.6b03873c.chunk.js": "/producao-web/static/js/2.6b03873c.chunk.js",
-    "static/js/2.6b03873c.chunk.js.map": "/producao-web/static/js/2.6b03873c.chunk.js.map",
+    "static/js/2.2e92b917.chunk.js": "/producao-web/static/js/2.2e92b917.chunk.js",
+    "static/js/2.2e92b917.chunk.js.map": "/producao-web/static/js/2.2e92b917.chunk.js.map",
     "index.html": "/producao-web/index.html",
-    "precache-manifest.2487a0d82904da685a94717fb2bcb240.js": "/producao-web/precache-manifest.2487a0d82904da685a94717fb2bcb240.js",
+    "precache-manifest.93c6e79104a24bd3fd00521524b614bc.js": "/producao-web/precache-manifest.93c6e79104a24bd3fd00521524b614bc.js",
     "service-worker.js": "/producao-web/service-worker.js",
     "static/css/2.59ca6ef4.chunk.css.map": "/producao-web/static/css/2.59ca6ef4.chunk.css.map",
-    "static/css/main.d926196f.chunk.css.map": "/producao-web/static/css/main.d926196f.chunk.css.map",
+    "static/css/main.0efc3680.chunk.css.map": "/producao-web/static/css/main.0efc3680.chunk.css.map",
+    "static/media/cozinha.jpeg": "/producao-web/static/media/cozinha.49ff0d25.jpeg",
     "static/media/img-casa-cima.jpeg": "/producao-web/static/media/img-casa-cima.f163ecff.jpeg",
+    "static/media/quarto-monique.jpeg": "/producao-web/static/media/quarto-monique.4a3142e3.jpeg",
+    "static/media/quarto-nene.jpeg": "/producao-web/static/media/quarto-nene.66ba64db.jpeg",
+    "static/media/quarto-teresa.jpeg": "/producao-web/static/media/quarto-teresa.c8bbcef2.jpeg",
+    "static/media/sala-estar.jpeg": "/producao-web/static/media/sala-estar.d1947ed5.jpeg",
+    "static/media/sala-jantar.jpeg": "/producao-web/static/media/sala-jantar.f7d28efc.jpeg",
     "static/media/solitaria-logo.png": "/producao-web/static/media/solitaria-logo.2ed7f03b.png"
   }
 }
