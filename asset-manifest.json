@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d926196f.chunk.css",
-    "main.js": "/static/js/main.f18c9295.chunk.js",
-    "main.js.map": "/static/js/main.f18c9295.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.59ca6ef4.chunk.css": "/static/css/2.59ca6ef4.chunk.css",
-    "static/js/2.7107f7ec.chunk.js": "/static/js/2.7107f7ec.chunk.js",
-    "static/js/2.7107f7ec.chunk.js.map": "/static/js/2.7107f7ec.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ef67e9b1f65e75b17566c25c49741e82.js": "/precache-manifest.ef67e9b1f65e75b17566c25c49741e82.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.59ca6ef4.chunk.css.map": "/static/css/2.59ca6ef4.chunk.css.map",
-    "static/css/main.d926196f.chunk.css.map": "/static/css/main.d926196f.chunk.css.map",
-    "static/media/img-casa-cima.jpeg": "/static/media/img-casa-cima.f163ecff.jpeg",
-    "static/media/solitaria-logo.png": "/static/media/solitaria-logo.2ed7f03b.png"
+    "main.css": "/producao-web/static/css/main.d926196f.chunk.css",
+    "main.js": "/producao-web/static/js/main.d1596027.chunk.js",
+    "main.js.map": "/producao-web/static/js/main.d1596027.chunk.js.map",
+    "runtime~main.js": "/producao-web/static/js/runtime~main.8eb61003.js",
+    "runtime~main.js.map": "/producao-web/static/js/runtime~main.8eb61003.js.map",
+    "static/css/2.59ca6ef4.chunk.css": "/producao-web/static/css/2.59ca6ef4.chunk.css",
+    "static/js/2.22da08ee.chunk.js": "/producao-web/static/js/2.22da08ee.chunk.js",
+    "static/js/2.22da08ee.chunk.js.map": "/producao-web/static/js/2.22da08ee.chunk.js.map",
+    "index.html": "/producao-web/index.html",
+    "precache-manifest.8e73082804cc808bf0d7cfad63720cbf.js": "/producao-web/precache-manifest.8e73082804cc808bf0d7cfad63720cbf.js",
+    "service-worker.js": "/producao-web/service-worker.js",
+    "static/css/2.59ca6ef4.chunk.css.map": "/producao-web/static/css/2.59ca6ef4.chunk.css.map",
+    "static/css/main.d926196f.chunk.css.map": "/producao-web/static/css/main.d926196f.chunk.css.map",
+    "static/media/img-casa-cima.jpeg": "/producao-web/static/media/img-casa-cima.f163ecff.jpeg",
+    "static/media/solitaria-logo.png": "/producao-web/static/media/solitaria-logo.2ed7f03b.png"
   }
 }
