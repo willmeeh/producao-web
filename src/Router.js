@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import Home from './pages/Home';
 import Comodo from './pages/Comodo'
 import Planta from './pages/Planta'
+
+
 import { Layout, Menu, Breadcrumb } from 'antd';
 const { Header, Content, Footer } = Layout;
+
+
 
 export const ROUTES = [
   { path: '/', component: Home },
@@ -45,4 +49,4 @@ class MyHomeBrewRouter extends Component {
   }
 }
 
-export default MyHomeBrewRouter;
+export default withRouter(MyHomeBrewRouter);

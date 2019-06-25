@@ -30,31 +30,37 @@ const data = [
     },
 ];
 
-const comodos = {
+export const COMODOS = {
     'cozinha': {
-        backgroundImage: ImagemCozinha
+        backgroundImage: ImagemCozinha,
+        name: 'Cozinha'
     },
     'quarto-monique': {
-        backgroundImage: ImagemQuartoMonique
+        backgroundImage: ImagemQuartoMonique,
+        name: 'Quarto da Monique'
     },
     'quarto-nene': {
-        backgroundImage: ImagemQuartoNene
+        backgroundImage: ImagemQuartoNene,
+        name: 'Quarto do Bebê'
     },
     'quarto-teresa': {
-        backgroundImage: ImagemQuartoTeresa
+        backgroundImage: ImagemQuartoTeresa,
+        name: 'Quarto da Teresa'
     },
     'sala-estar': {
-        backgroundImage: ImagemSalaEstar
+        backgroundImage: ImagemSalaEstar,
+        name: 'Sala de Estar'
     },
     'sala-jantar': {
-        backgroundImage: ImagemSalaJantar
+        backgroundImage: ImagemSalaJantar,
+        name: 'Sala de Jantar'
     },
 };
 
 class Comodo extends Component {
     render() {
         const { nomeComodo } = this.props.match.params;
-        const { backgroundImage } = comodos[nomeComodo]
+        const { backgroundImage } = COMODOS[nomeComodo]
 
         console.log('nomeComodo', nomeComodo);
         console.log('backgroundImage', backgroundImage);

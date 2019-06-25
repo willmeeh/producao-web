@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Router from './Router';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
-
+import { withRouter } from 'react-router-dom'
 
 import './App.scss';
 
@@ -15,4 +15,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

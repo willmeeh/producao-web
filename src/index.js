@@ -5,9 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
 
+import { createBrowserHistory } from 'history';
+const history = createBrowserHistory();
 
 ReactDOM.render(
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
         <App />
     </BrowserRouter>
     , document.getElementById('root'));
