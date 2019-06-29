@@ -3,6 +3,7 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import Home from './pages/Home';
 import Comodo from './pages/Comodo'
 import Planta from './pages/Planta'
+import Equipe from './pages/Equipe'
 import { Link } from 'react-router-dom';
 
 import { Layout, Menu } from 'antd';
@@ -12,8 +13,9 @@ const { Header, Content } = Layout;
 
 export const ROUTES = [
   { path: '/', component: Home },
-  { path: '/comodo/:nomeComodo?', component: Comodo},
-  { path: '/planta', component: Planta}
+  { path: '/comodo/:nomeComodo?', component: Comodo },
+  { path: '/planta', component: Planta },
+  { path: '/equipe', component: Equipe }
 ];
 
 class MyHomeBrewRouter extends Component {
