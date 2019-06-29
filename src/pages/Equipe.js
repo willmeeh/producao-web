@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import logo from '../images/solitaria-logo.png';
-import william from '../images/autores/william.jpeg';
-import arthur from '../images/autores/arthur.jpeg';
 import './Equipe.scss';
 import { Row, Col, Button, Card } from 'antd';
 import { Link } from 'react-router-dom';
 import { Avatar } from 'antd';
 
+import william from '../images/autores/william.jpeg';
+import arthur from '../images/autores/arthur.jpeg';
+import vitor from '../images/autores/vitor.jpeg';
+import rafaela from '../images/autores/rafaela.jpeg';
+import milena from '../images/autores/milena.jpeg';
+import eduarda from '../images/autores/eduarda.jpeg';
+import caroline from '../images/autores/caroline.jpeg';
+import bruno from '../images/autores/bruno.jpeg';
+import alceu from '../images/autores/alceu.jpeg';
 
 class Equipe extends Component {
     render() {
+        const size = 64;
+        const colSpanSize = 8;
+
         return (
             <div className="equipe-page">
                 <img className="house-external" src={"https://willmeeh.github.io/producao-web/static/media/img-casa-cima.f163ecff.jpeg"} alt="alt"/>
@@ -19,17 +29,51 @@ class Equipe extends Component {
                 </div>
 
                 <Row type="flex" justify="space-around" className="equipe-container" align="middle">
-                    <Col span={12}>
-                        <Avatar size={64} src={arthur} />
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={vitor}/>
+                        <br/>
+                        <span className="nome">Vitor A. Vogt - Diretor, roteirista, produtor, editor, finalizador</span>
+                    </Col>
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={milena}/>
+                        <br/>
+                        <span className="nome">Milena Morais - Diretora, produtora, diretora de arte, editora</span>
+                    </Col>
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={bruno}/>
+                        <br/>
+                        <span className="nome">Bruno Granata - Assistente de Direção, produtor, editor, finalizador</span>
+                    </Col>
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={rafaela}/>
+                        <br/>
+                        <span className="nome">Rafaela Aline Wenzel - atriz principal, produtora</span>
+                    </Col>
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={caroline}/>
+                        <br/>
+                        <span className="nome">Caroline de F. Oliveira - atriz coadjuvante, produtora</span>
+                    </Col>
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={alceu}/>
+                        <br/>
+                        <span className="nome">Alceu Silva - Diretor de fotografia, Produtor</span>
+                    </Col>
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={arthur} />
                         <br/>
                         <span className="nome">Arthur - Desenvolvedor do Site</span>
                     </Col>
-                    <Col span={12}>
-                        <Avatar size={64} src={william} />
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={william} />
                         <br/>
                         <span className="nome">William - Desenvolvedor do Site</span>
                     </Col>
-
+                    <Col span={colSpanSize}>
+                        <Avatar size={size} src={eduarda}/>
+                        <br/>
+                        <span className="nome">Eduarda Pereira - Desenvolvedora da Identidade Visual</span>
+                    </Col>
                 </Row>
             </div>
         );
