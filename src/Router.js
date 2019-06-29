@@ -3,12 +3,12 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import Home from './pages/Home';
 import Comodo from './pages/Comodo'
 import Planta from './pages/Planta'
+import { Link } from 'react-router-dom';
 
+import { Layout, Menu } from 'antd';
+import './Router.scss';
 
-import { Layout, Menu, Breadcrumb } from 'antd';
-const { Header, Content, Footer } = Layout;
-
-
+const { Header, Content } = Layout;
 
 export const ROUTES = [
   { path: '/', component: Home },
@@ -25,26 +25,43 @@ class MyHomeBrewRouter extends Component {
 
   render() {
     return (
-      <Switch>
-        <Layout className="layout">
-          <Header style={{ height: '0px' }}>
-            <div className="logo" />
-            <Menu
-              mode="horizontal"
-              defaultSelectedKeys={['1']}
-              style={{ marginTop: '30px', backgroundColor: 'rgba(255, 255, 255, 1)', paddingTop: '20px', lineHeight: '20px' }}
-            >
-              <Menu.Item key="1">Home</Menu.Item>
-              <Menu.Item key="2">Equipe</Menu.Item>
-              <Menu.Item key="3">Sobre</Menu.Item>
-            </Menu>
-          </Header>
-          <Content >
+      
+      <Layout className="layout">
+        <Header style={{ height: '0px' }}>
+          <Menu
+            className="menu-solitaria"
+            mode="horizontal"
+            defaultSelectedKeys={['1']}
+          >
+            <Menu.Item key="1">
+              <Link to="/">
+                Home
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Link to="/equipe">
+                Equipe
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Link to="/sobre">
+                Sobre
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="4">
+              <Link to="/planta">
+                Playlist Completa
+              </Link>
+            </Menu.Item>
+          </Menu>
+        </Header>
+        <Content >
+            <Switch>
             {/* @TODO: Criação de rotas provisórias, utilizar (https://reacttraining.com/react-router/web/example/route-config) ?  */}
-            {this.createRoutes(ROUTES)}
-          </Content>
-        </Layout>
-      </Switch>
+              {this.createRoutes(ROUTES)}
+            </Switch>
+        </Content>
+      </Layout>
     );
   }
 }

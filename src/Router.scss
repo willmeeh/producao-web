@@ -1,0 +1,39 @@
+.menu-solitaria {
+    background: rgba(185, 185, 185, 0.5) !important;
+    font-weight: 900 !important;
+
+    margin-top: 30px !important;
+    padding-top: 20px;
+    line-height: 20px;
+    z-index: 10;
+
+    // height: auto !important;
+    
+    // height: 0 !important;
+    // padding: 0 !important;
+}
+
+.ant-menu-item:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff !important;
+    border-color: #fff !important;
+
+    > a {
+        color: #fff !important;
+    }
+}
+
+.ant-menu-item-selected {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff !important;
+    border-color: #fff !important;
+
+    > a {
+        color: #fff !important;
+    }
+}
+
+//  .ant-layout-header {
+//     height: auto !important;
+//     padding: 0 !important;
+//  }
