@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "803e8017f631df02dc796a59e1eb079a",
+    "revision": "1be76f63e4fe86e05ade69bf2803a290",
     "url": "/producao-web/index.html"
   },
   {
-    "revision": "30d6a61f305389ec1474",
+    "revision": "c4423905058f725d533c",
     "url": "/producao-web/static/css/2.59ca6ef4.chunk.css"
   },
   {
-    "revision": "73fe5a5470f094de5df5",
+    "revision": "b077bcb03a255e0afb06",
     "url": "/producao-web/static/css/main.5f7ac350.chunk.css"
   },
   {
-    "revision": "30d6a61f305389ec1474",
-    "url": "/producao-web/static/js/2.64c3aa02.chunk.js"
+    "revision": "c4423905058f725d533c",
+    "url": "/producao-web/static/js/2.c7652a77.chunk.js"
   },
   {
-    "revision": "73fe5a5470f094de5df5",
-    "url": "/producao-web/static/js/main.bfc48be0.chunk.js"
+    "revision": "b077bcb03a255e0afb06",
+    "url": "/producao-web/static/js/main.978a0d46.chunk.js"
   },
   {
     "revision": "d7d07e5018289c38291e",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "84b47622df595992a38d13751807b97d",
     "url": "/producao-web/static/media/eduarda.84b47622.jpeg"
+  },
+  {
+    "revision": "f163ecffb0f22b2593d8ebaa671eb537",
+    "url": "/producao-web/static/media/img-casa-cima.f163ecff.jpeg"
   },
   {
     "revision": "29edce5b21677705d7bb567730e4dd33",
