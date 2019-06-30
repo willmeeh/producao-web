@@ -48,4 +48,13 @@
         z-index: -1;
         filter: brightness(40%);
     }
+
+    .nenhuma-cena-liberada {
+        background: rgba(185, 185, 185, 0.5) !important;
+        font-weight: 900 !important;
+        // background: rgba(0, 0, 0, 0.5) !important;
+        // color: #fff !important;
+        
+        z-index: 9;
+    }
 }

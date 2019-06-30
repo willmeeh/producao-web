@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Comodo.scss';
-import { notification, Button, Col, Row, Icon, Menu } from 'antd';
+import { notification, Button, Col, Row, Icon, Menu, Card } from 'antd';
 import ReactPlayer from 'react-player'
 import { Link } from 'react-router-dom';
 
@@ -197,11 +197,13 @@ class Comodo extends Component {
         });
         
         const videoFounded = comodo.videos.find((video) => currentVideoOrder === video.order);
-        let orderToChangeVideo = currentVideoOrder;
-        if (!videoFounded) {
-            orderToChangeVideo = comodo.videos[0].order;
+        if (videoFounded) {
+            this.changeVideoByOrder(currentVideoOrder, comodo);
         }
-        this.changeVideoByOrder(orderToChangeVideo, comodo);
+        // if (!videoFounded) {
+        //     orderToChangeVideo = comodo.videos[0].order;
+        // }
+        // this.changeVideoByOrder(orderToChangeVideo, comodo);
     }
 
     handleOnVideoEnd() {
@@ -232,7 +234,10 @@ class Comodo extends Component {
 
     render() {
         const { backgroundImage, videos } = this.state.comodo;
-
+        let selectedKeys = null;
+        if (this.state.selectedVideo) {
+            selectedKeys = [String(this.state.selectedVideo.order)]
+        }
         // console.log('nomeComodo', nomeComodo);
         // console.log('backgroundImage', backgroundImage);
 
@@ -243,17 +248,25 @@ class Comodo extends Component {
                 <Row>
                     <Col lg={20} md={18} sm={15} xs={24}>
                     {/* url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be'  */}
-                        <ReactPlayer 
-                            className="video-player" 
-                            url={this.state.selectedVideo.src}
-                            onEnded={this.handleOnVideoEnd.bind(this)}
-                        />
+                        {
+                            this.state.selectedVideo ? 
+                            <ReactPlayer 
+                                className="video-player" 
+                                url={this.state.selectedVideo.src}
+                                onEnded={this.handleOnVideoEnd.bind(this)}
+                            />
+                            :
+                            <Card className="nenhuma-cena-liberada">
+                                <p>Nenhuma cena liberada para este cômodo</p>
+                            </Card>
+                        }
+                        
                         {/* <ReactPlayer url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' playing /> */}
                     </Col>
                     <Col lg={4} md={6} sm={8} xs={24}>
                         <div className="playlist">
                             <Menu 
-                                selectedKeys={[String(this.state.selectedVideo.order)]}
+                                selectedKeys={selectedKeys}
                                 onClick={this.handleMenuItemClick.bind(this)} mode="vertical"
                             >
                                 {this.createMenuItems(videos)}
@@ -272,3 +285,5 @@ class Comodo extends Component {
 }
 
 export default Comodo;
+
+
