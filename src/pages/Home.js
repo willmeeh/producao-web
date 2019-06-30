@@ -4,12 +4,13 @@ import './Home.scss';
 import { Button } from 'antd';
 import { Card } from 'antd';
 import { Link } from 'react-router-dom';
+import bg from '../images/img-casa-cima.jpeg';
 
 class Home extends Component {
     render() {
         return (
             <div className="home-page">
-                <img className="background-image" src={"https://willmeeh.github.io/producao-web/static/media/img-casa-cima.f163ecff.jpeg"} alt="alt"/>
+                <img className="background-image" src={bg} alt="alt"/>
 
                 <div className="logo-outer">
                     <img className="logo-inner" src={logo} alt="logo"/>

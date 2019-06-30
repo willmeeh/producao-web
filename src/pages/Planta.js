@@ -3,6 +3,7 @@ import './Planta.scss';
 import { COMODOS } from './Comodo';
 import { withRouter, Redirect } from 'react-router-dom'
 import ImageMapper from 'react-image-mapper';
+import bg from '../images/img-casa-cima.jpeg';
 
 const image = 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/comodos.png'
 
@@ -49,7 +50,7 @@ class Planta extends Component {
 
         return (
             <div className="planta-page">
-                <img className="background-image" src={"https://willmeeh.github.io/producao-web/static/media/img-casa-cima.f163ecff.jpeg"} alt="alt"/>
+                <img className="background-image" src={bg} alt="alt"/>
                 <div className="planta">
                     <ImageMapper
                         className="image-responsive"

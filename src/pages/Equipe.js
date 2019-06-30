@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../images/solitaria-logo.png';
+import bg from '../images/img-casa-cima.jpeg';
 import './Equipe.scss';
 import { Row, Col } from 'antd';
 import { Avatar } from 'antd';
@@ -21,7 +22,7 @@ class Equipe extends Component {
 
         return (
             <div className="equipe-page">
-                <img className="background-image" src={"https://willmeeh.github.io/producao-web/static/media/img-casa-cima.f163ecff.jpeg"} alt="alt"/>
+                <img className="background-image" src={bg} alt="alt"/>
 
                 <div className="logo-outer">
                     <img className="logo-inner" src={logo} alt="logo"/>
