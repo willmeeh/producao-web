@@ -6,8 +6,7 @@ import Planta from './pages/Planta'
 import Equipe from './pages/Equipe'
 import { Link } from 'react-router-dom';
 
-import { Layout, Menu } from 'antd';
-import './Router.scss';
+import {  Menu } from 'antd';
 
 export const ROUTES = [
     { path: '/', component: Home },

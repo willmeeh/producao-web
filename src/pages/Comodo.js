@@ -70,10 +70,11 @@ class Comodo extends Component {
                 <img className="comodo-background-image" src={backgroundImage} alt="alt"/>
                 <Row gutter={8}>
                     <Col span={16}>
-                        <ReactPlayer url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' playing />
+                        <ReactPlayer className="video-player" url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' />
+                        {/* <ReactPlayer url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' playing /> */}
                     </Col>
-                    <Col span={5}>
-                        <Card title="Descrição" bordered={false} style={{ width: 400 }}>
+                    <Col span={8}>
+                        <Card bordered={false} style={{ width: 400 }}>
                             <List
                                 itemLayout="horizontal"
                                 dataSource={data}
