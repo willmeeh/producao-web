@@ -70,7 +70,8 @@ export const COMODOS = {
             { 
                 src: 'https://www.youtube.com/watch?v=i_Zz8mIHXWc',
                 order: 1,
-                messageToNextVideo: 'Vá para a sala de estar'
+                messageToNextVideo: 'Vá para a sala de estar',
+                comodoProximoVideo: 'sala-estar'
             },
             { 
                 src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
@@ -80,7 +81,6 @@ export const COMODOS = {
             { 
                 src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
                 order: 4,
-                messageToNextVideo: 'Assista a próxima cena deste cômodo'
             }
         ]
     },
@@ -124,7 +124,8 @@ export const COMODOS = {
             { 
                 src: 'https://www.youtube.com/watch?v=g8gs1inwrdM',
                 order: 2,
-                messageToNextVideo: 'Vá para cozinha'
+                messageToNextVideo: 'Vá para cozinha',
+                comodoProximoVideo: 'cozinha'
             }
         ]
     },
@@ -213,14 +214,16 @@ class Comodo extends Component {
 
         const nextVideo = this.state.comodo.videos.find((video) => nextOrderVideo === video.order);
         if (!nextVideo) {
-            notification.open({
-                message: 'Atenção',
-                description: messageToNextVideo,
-                duration: 15,
-                onClick: () => {
-                  console.log('Notification Clicked!');
-                },
-            });
+            if (messageToNextVideo) {
+                notification.open({
+                    message: 'Atenção',
+                    description: messageToNextVideo,
+                    duration: 15,
+                    onClick: () => {
+                      console.log('Notification Clicked!');
+                    },
+                });
+            }
         }
         else {
             this.changeVideoByOrder(nextOrderVideo, this.state.comodo);
