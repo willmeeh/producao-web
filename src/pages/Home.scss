@@ -1,31 +1,10 @@
 .home-page {
     font-weight: 900 !important;
 
-    .house-external {
-        min-height: 100%;
-        min-width: 1024px;
-
-        width: 100%;
-        height: auto;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        filter: brightness(40%);
-    }
-
     .botao-iniciar-tour {
         position: fixed !important; 
         left: 50%; 
         top: 50%;
-        transform: translateX(-50%);
-    }
-
-    .botao-playlist-completa {
-        position: fixed !important; 
-        right: 10%; 
-        top: 80%;
         transform: translateX(-50%);
     }
 

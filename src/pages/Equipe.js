@@ -22,7 +22,7 @@ class Equipe extends Component {
 
         return (
             <div className="equipe-page">
-                <img className="house-external" src={"https://willmeeh.github.io/producao-web/static/media/img-casa-cima.f163ecff.jpeg"} alt="alt"/>
+                <img className="background-image" src={"https://willmeeh.github.io/producao-web/static/media/img-casa-cima.f163ecff.jpeg"} alt="alt"/>
 
                 <div className="logo-outer">
                     <img className="logo-inner" src={logo} alt="logo"/>
@@ -47,12 +47,12 @@ class Equipe extends Component {
                     <Col span={colSpanSize}>
                         <Avatar size={size} src={rafaela}/>
                         <br/>
-                        <span className="nome">Rafaela Aline Wenzel - atriz principal, produtora</span>
+                        <span className="nome">Rafaela Aline Wenzel - Atriz protagonista, produtora</span>
                     </Col>
                     <Col span={colSpanSize}>
                         <Avatar size={size} src={caroline}/>
                         <br/>
-                        <span className="nome">Caroline de F. Oliveira - atriz coadjuvante, produtora</span>
+                        <span className="nome">Caroline de F. Oliveira - Atriz coadjuvante, produtora</span>
                     </Col>
                     <Col span={colSpanSize}>
                         <Avatar size={size} src={alceu}/>

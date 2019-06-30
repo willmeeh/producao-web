@@ -50,38 +50,22 @@ class Planta extends Component {
         }
 
         return (
-            <div>
-                <div className="planta-page">
-                    <Row type="flex" justify="space-around" align="middle">
-                        <Col span={10}>
-                            <Link to="/">
-                                <Button className="" size="large">Voltar</Button>
-                            </Link>
-                            <Card className="home-card" bordered={false}>
-                                <p>
-                                    Aqui vai um unicorning texto explicando o unicorning projeto; 
-                                    Acima de tudo, é fundamental ressaltar que o consenso sobre a necessidade de qualificação deve passar por modificações independentemente dos índices pretendidos. 
-                                    Não obstante, a complexidade dos estudos efetuados garante a contribuição de um grupo importante na determinação das diretrizes de desenvolvimento para o futuro. 
-                                </p>
-                            </Card>
-                        </Col>
-                        <Col span={14}>
-                            <div className="planta-external">
-                                <ImageMapper
-                                    onClick={this.handleComodoClick} src={image} map={MAP}
-                                    onMouseEnter={area => this.enterArea(area)}
-    	                            onMouseLeave={area => this.leaveArea(area)}
-                                />
-                                {
-                                    this.state.hoveredArea &&
-                                    <span className="tooltip"
-                                        style={{ ...this.getTipPosition(this.state.hoveredArea)}}>
-                                        { this.state.hoveredArea && COMODOS[this.state.hoveredArea.name].name}
-                                    </span>
-                                }
-                            </div>
-                        </Col>
-                    </Row>
+            <div className="planta-page">
+                <img className="background-image" src={"https://willmeeh.github.io/producao-web/static/media/img-casa-cima.f163ecff.jpeg"} alt="alt"/>
+                <div className="planta">
+                    <ImageMapper
+                        className="image-responsive"
+                        onClick={this.handleComodoClick} src={image} map={MAP}
+                        onMouseEnter={area => this.enterArea(area)}
+                        onMouseLeave={area => this.leaveArea(area)}
+                    />
+                    {
+                        this.state.hoveredArea &&
+                        <span className="tooltip"
+                            style={{ ...this.getTipPosition(this.state.hoveredArea)}}>
+                            { this.state.hoveredArea && COMODOS[this.state.hoveredArea.name].name}
+                        </span>
+                    }
                 </div>
             </div>
         );

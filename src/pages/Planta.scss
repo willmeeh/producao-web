@@ -1,18 +1,13 @@
 .planta-page {
     font-weight: 900 !important;
     text-align: center;
+    margin-top: 10%;
 
-    .planta-external {
-        height: 100%;
-        margin-top: 100px;
+    .planta {
         position: absolute;
-    }
-
-    .home-card {
-        position: fixed !important; 
-        left: 5%;
-        bottom: 5%;
-        width: 30%;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .tooltip {
