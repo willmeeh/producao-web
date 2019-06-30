@@ -7,7 +7,7 @@
 
     .video-player {
         margin: auto;
-        width: 76% !important;
+        width: 100% !important;
         // height: 100% !important;
         height: 80vh !important;
         justify-content: center;
@@ -17,7 +17,7 @@
         width: 160px;
         margin: auto;
 
-        .ant-card {
+        .ant-menu {
             background: rgba(185, 185, 185, 0.5) !important;
             font-weight: 900 !important;
     
@@ -25,6 +25,9 @@
             a {
                 color: #fff !important;
             }
+
+            // height: 65vh;
+            // overflow-y: scroll;
         }
 
         button {
