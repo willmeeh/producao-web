@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './Planta.scss';
-import { Row, Col, Button, Card } from 'antd';
-import { Link } from 'react-router-dom';
 import { COMODOS } from './Comodo';
-import { withRouter, Router, Redirect } from 'react-router-dom'
+import { withRouter, Redirect } from 'react-router-dom'
 import ImageMapper from 'react-image-mapper';
 
 const image = 'https://raw.githubusercontent.com/willmeeh/producao-web/master/src/images/comodos.png'

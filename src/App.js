@@ -13,16 +13,14 @@ const { Header, Content } = Layout;
 class App extends Component {
   render() {
     return (
-      <div>
-        <Layout className="layout">
-          <Header style={{ height: '0px' }}>
-            <Menu/>
-          </Header>
-          <Content >
-            <Router />
-          </Content>
-        </Layout>
-      </div>
+      <Layout className="layout">
+        <Header style={{ height: '0px' }}>
+          <Menu/>
+        </Header>
+        <Content className="content">
+          <Router />
+        </Content>
+      </Layout>
     );
   }
 }

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import Home from './pages/Home';
 import Comodo from './pages/Comodo'
 import Planta from './pages/Planta'
 import Equipe from './pages/Equipe'
 import { Link } from 'react-router-dom';
 
-import {  Menu } from 'antd';
+import { Menu } from 'antd';
 
 export const ROUTES = [
     { path: '/', component: Home },
@@ -26,8 +26,6 @@ class MyHomeBrewRouter extends Component {
     }
     
     componentDidMount() {
-
-        console.log('this.props.location.pathname', this.props.location.pathname);
         this.setState({
             current: this.props.location.pathname
         })
@@ -49,8 +47,6 @@ class MyHomeBrewRouter extends Component {
     }
             
     render() {
-
-        console.log('this.state.current', this.state.current)
         return (
             <Menu
                 onClick={this.handleClick}

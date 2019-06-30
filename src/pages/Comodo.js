@@ -68,31 +68,33 @@ class Comodo extends Component {
         return (
             <div className="comodo-page">
                 <img className="comodo-background-image" src={backgroundImage} alt="alt"/>
-                <Row gutter={8}>
-                    <Col span={16}>
+                {/* <Row type="flex" justify="center" align="middle"> */}
+                <Row>
+                    <Col lg={20} md={18} sm={15} xs={24}>
                         <ReactPlayer className="video-player" url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' />
                         {/* <ReactPlayer url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' playing /> */}
                     </Col>
-                    <Col span={8}>
-                        <Card bordered={false} style={{ width: 400 }}>
-                            <List
-                                itemLayout="horizontal"
-                                dataSource={data}
-                                renderItem={item => (
-                                    <List.Item>
-                                        <List.Item.Meta
-                                            title={<a><Icon type={item.icon} />{item.title}</a>}
-                                            description="Esse vídeo apresenta o momento em que o personagem."
-                                        />
-                                    </List.Item>
-                                )}
-                            />
-                        </Card>
-                        <Link to="/planta">
-                            <Button type="primary" icon="download" size={'large'}>
-                                Voltar
-                            </Button>
-                        </Link>
+                    <Col lg={4} md={6} sm={8} xs={24}>
+                        <div className="playlist">
+                            <Card bordered={false}>
+                                <List
+                                    itemLayout="horizontal"
+                                    dataSource={data}
+                                    renderItem={item => (
+                                        <List.Item>
+                                            <List.Item.Meta
+                                                title={<a><Icon type={item.icon} /> {item.title}</a>}
+                                            />
+                                        </List.Item>
+                                    )}
+                                />
+                            </Card>
+                            <Link to="/planta">
+                                <Button type="primary" size={'large'}>
+                                    Cômodos
+                                </Button>
+                            </Link>
+                        </div>
                     </Col>
                 </Row>
             </div >

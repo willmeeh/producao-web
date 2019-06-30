@@ -6,9 +6,30 @@
     margin-top: 100px;
 
     .video-player {
-        width: 100% !important;
+        margin: auto;
+        width: 76% !important;
         // height: 100% !important;
         height: 80vh !important;
+        justify-content: center;
+    }
+
+    .playlist {
+        width: 160px;
+        margin: auto;
+
+        .ant-card {
+            background: rgba(185, 185, 185, 0.5) !important;
+            font-weight: 900 !important;
+    
+            color: #fff !important;
+            a {
+                color: #fff !important;
+            }
+        }
+
+        button {
+            margin-top: 10px;
+        }
     }
 
     .comodo-background-image {

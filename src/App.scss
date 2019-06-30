@@ -5,7 +5,12 @@ button {
     
     height: 2.5em !important;
     font-size: 2em !important;
-    
+
+    color: #fff !important;
+    a {
+        color: #fff !important;
+    }
+
     &:hover {
         background: rgba(0, 0, 0, 0.5) !important;
         color: #fff !important;
@@ -71,4 +76,8 @@ button {
 .image-responsive {
     width: 100%;
     height: auto;
+}
+
+.content {
+    padding: 0 50px;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../images/solitaria-logo.png';
 import './Home.scss';
-import { Button, Radio, Icon } from 'antd';
+import { Button } from 'antd';
 import { Card } from 'antd';
 import { Link } from 'react-router-dom';
 
