@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../images/solitaria-logo.png';
 import './Equipe.scss';
-import { Row, Col, Button, Card } from 'antd';
-import { Link } from 'react-router-dom';
+import { Row, Col } from 'antd';
 import { Avatar } from 'antd';
 
 import william from '../images/autores/william.jpeg';

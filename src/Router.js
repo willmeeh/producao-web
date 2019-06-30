@@ -4,9 +4,10 @@ import Home from './pages/Home';
 import Comodo from './pages/Comodo'
 import Planta from './pages/Planta'
 import Equipe from './pages/Equipe'
+import Menu from './Menu'
 import { Link } from 'react-router-dom';
 
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
 import './Router.scss';
 
 const { Header, Content } = Layout;
@@ -30,32 +31,7 @@ class MyHomeBrewRouter extends Component {
       
       <Layout className="layout">
         <Header style={{ height: '0px' }}>
-          <Menu
-            className="menu-solitaria"
-            mode="horizontal"
-            defaultSelectedKeys={['1']}
-          >
-            <Menu.Item key="1">
-              <Link to="/">
-                Home
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="2">
-              <Link to="/equipe">
-                Equipe
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="3">
-              <Link to="/sobre">
-                Sobre
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="4">
-              <Link to="/planta">
-                Playlist Completa
-              </Link>
-            </Menu.Item>
-          </Menu>
+          <Menu/>
         </Header>
         <Content >
             <Switch>

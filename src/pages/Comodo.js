@@ -66,31 +66,11 @@ class Comodo extends Component {
         console.log('backgroundImage', backgroundImage);
 
         return (
-            <div style={{marginTop: '100px'}}>
+            <div className="comodo-page">
                 <img className="comodo-background-image" src={backgroundImage} alt="alt"/>
                 <Row gutter={8}>
                     <Col span={16}>
-                        <Row>
-                            <Col span={20} style={{ padding: 20 }}>
-                                <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col span={18}>
-                                <Card title="Descrição" bordered={false} style={{ width: 500, height: 200 }}>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis malesuada dolor eu porta. Donec id urna ac metus feugiat rutrum eget nec nibh. Maecenas in sem vel metus ullamcorper pharetra.
-                                                </p>
-                                </Card>
-                            </Col>
-                            <Col span={4}>
-                                <Link to="/planta">
-                                    <Button type="primary" icon="download" size={'large'}>
-                                        Voltar
-                                    </Button>
-                                </Link>
-                            </Col>
-                        </Row>
+                        <ReactPlayer url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' playing />
                     </Col>
                     <Col span={5}>
                         <Card title="Descrição" bordered={false} style={{ width: 400 }}>
@@ -107,6 +87,11 @@ class Comodo extends Component {
                                 )}
                             />
                         </Card>
+                        <Link to="/planta">
+                            <Button type="primary" icon="download" size={'large'}>
+                                Voltar
+                            </Button>
+                        </Link>
                     </Col>
                 </Row>
             </div >
