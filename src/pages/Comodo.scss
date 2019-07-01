@@ -72,7 +72,7 @@
 
     .comodo-background-image {
         min-height: 100%;
-        min-width: 1024px;
+        min-width: 50%;
 
         width: 100%;
         height: auto;
@@ -81,7 +81,6 @@
         top: 0;
         left: 0;
         z-index: -1;
-        filter: brightness(40%);
     }
 
     .card-dica {

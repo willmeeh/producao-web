@@ -5,9 +5,14 @@ import ReactPlayer from 'react-player'
 import { Link } from 'react-router-dom';
 
 import ImagemCozinha from '../images/cozinha.jpeg'
+import ImagemCozinha2 from '../images/cozinha2.jpeg'
 import ImagemQuartoMonique from '../images/quarto-monique.jpeg'
+import ImagemQuartoMonique2 from '../images/quarto-monique-2.jpeg'
 import ImagemQuartoNene from '../images/quarto-nene.jpeg'
+import ImagemQuartoNene2 from '../images/quarto-nene2.jpeg'
+import ImagemQuartoNene3 from '../images/quarto-nene3.jpeg'
 import ImagemQuartoTeresa from '../images/quarto-teresa.jpeg'
+import ImagemQuartoTeresa2 from '../images/quarto-teresa2.jpeg'
 import ImagemSalaEstar from '../images/sala-estar.jpeg'
 import ImagemSalaJantar from '../images/sala-jantar.jpeg'
 
@@ -20,27 +25,22 @@ export const COMODOS = {
         name: 'Cozinha',
         videos: [
             {
-                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
+                src: 'https://www.youtube.com/watch?v=Uq_3k-N6ntQ',
                 order: 3,
                 messageToNextVideo: 'Vá para a sala de jantar',
                 comodoProximoVideo: 'sala-jantar'
             },
             {
-                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
-                order: 5,
+                src: 'https://www.youtube.com/watch?v=ulzdM2hQOGk',
+                order: 4,
                 messageToNextVideo: 'Vá para a sala de jantar',
                 comodoProximoVideo: 'sala-jantar'
             },
             {
-                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
-                order: 7,
-                messageToNextVideo: 'Vá para o quarto do bebê',
+                src: 'https://www.youtube.com/watch?v=3-gbwpNN9vI',
+                order: 6,
+                messageToNextVideo: 'Vá para o quarto trancado',
                 comodoProximoVideo: 'quarto-nene'
-            },
-            {
-                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
-                order: 13,
-                messageToNextVideo: 'Fim.',
             }
         ]
     },
@@ -49,7 +49,7 @@ export const COMODOS = {
         name: 'Quarto da Monique',
         videos: [
             {
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
+                src: 'https://www.youtube.com/watch?v=BAIkOV4pbUo',
                 order: 2,
                 messageToNextVideo: 'Vá para a Cozinha',
                 comodoProximoVideo: 'cozinha'
@@ -58,19 +58,13 @@ export const COMODOS = {
     },
     'quarto-nene': {
         backgroundImage: ImagemQuartoNene,
-        name: 'Quarto do Bebê',
+        name: 'Quarto Trancado',
         videos: [
             {
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 8,  // Mudar a imagem
+                src: 'https://www.youtube.com/watch?v=3UPzSO0nHC8',
+                order: 7,
                 messageToNextVideo: 'Vá para a sala de estar',
                 comodoProximoVideo: 'sala-estar'
-            },
-            {
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be', // Muda a imagem
-                order: 12,
-                messageToNextVideo: 'Vá para a cozinha',
-                comodoProximoVideo: 'cozinha'
             }
         ]
     },
@@ -79,11 +73,17 @@ export const COMODOS = {
         name: 'Quarto da Teresa',
         videos: [
             {
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 10,
+                src: 'https://www.youtube.com/watch?v=Tr37xJ45zZc',
+                order: 9,
                 messageToNextVideo: 'Vá para a sala de jantar',
                 comodoProximoVideo: 'sala-jantar'
-            }
+            },
+            {
+                src: 'https://www.youtube.com/watch?v=ejPYbGJEPUU',
+                order: 11,
+                messageToNextVideo: '',
+                comodoProximoVideo: ''
+            },
         ]
     },
     'sala-estar': {
@@ -91,14 +91,14 @@ export const COMODOS = {
         name: 'Sala de Estar',
         videos: [
             {
-                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
+                src: 'https://www.youtube.com/watch?v=B27iYNmOaXY',
                 order: 1,
                 messageToNextVideo: 'Vá para o quarto da monique',
                 comodoProximoVideo: 'quarto-monique'
             },
             {
-                src: 'https://www.youtube.com/watch?v=i_Zz8mIHXWc',
-                order: 9,
+                src: 'https://www.youtube.com/watch?v=tWvG2zEfDU8',
+                order: 8,
                 messageToNextVideo: 'Vá para o quarto da Teresa',
                 comodoProximoVideo: 'quarto-teresa'
             }
@@ -109,22 +109,10 @@ export const COMODOS = {
         name: 'Sala de Jantar',
         videos: [
             {
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 4,
-                messageToNextVideo: 'Vá para a cozinha',
-                comodoProximoVideo: 'cozinha'
-            },
-            {
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 6,
-                messageToNextVideo: 'Vá para a cozinha',
-                comodoProximoVideo: 'cozinha'
-            },
-            {
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 11,
-                messageToNextVideo: 'Vá para o quarto do bebê',
-                comodoProximoVideo: 'quarto-nene'
+                src: 'https://www.youtube.com/watch?v=v7Qi4xXtEqs',
+                order: 10,
+                messageToNextVideo: 'Vá para o quarto da teresa',
+                comodoProximoVideo: 'quarto-teresa'
             }
         ]
     },
@@ -282,12 +270,24 @@ class Comodo extends Component {
 
         const savedVideoOrder = this.getSavedVideoOrder();
         const { nomeComodo } = this.props.match.params;
-        if (savedVideoOrder >= 8 && savedVideoOrder < 12 && nomeComodo === 'quarto-nene') {
-            backgroundImage = imagemCena8
+        if (savedVideoOrder >= 8 && savedVideoOrder < 11 && nomeComodo === 'quarto-nene') {
+            backgroundImage = ImagemQuartoNene2;
         }
-        else if (savedVideoOrder >= 12 && nomeComodo === 'quarto-nene') {
-            backgroundImage = imagemCena12
+        else if (savedVideoOrder >= 3 && savedVideoOrder < 11 && nomeComodo === 'quarto-monique') {
+            backgroundImage = ImagemQuartoMonique2;
         }
+        else if (savedVideoOrder >= 11) {
+            if (nomeComodo === 'quarto-teresa') {
+                backgroundImage = ImagemQuartoTeresa2;
+            }
+            // if (nomeComodo === 'cozinha') {
+            //     backgroundImage = ImagemCozinha2;
+            // }
+            if (nomeComodo === 'quarto-nene') {
+                backgroundImage = ImagemQuartoNene3;
+            }
+        }
+
 
         return (
             <div className="comodo-page">
@@ -298,6 +298,7 @@ class Comodo extends Component {
                         {
                             this.state.selectedVideo ?
                             <ReactPlayer
+                                controls={true}
                                 className="video-player"
                                 url={this.state.selectedVideo.src}
                                 onEnded={this.handleOnVideoEnd.bind(this)}
