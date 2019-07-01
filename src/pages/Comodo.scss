@@ -26,6 +26,13 @@
                 color: #fff !important;
             }
 
+            .ant-menu-item-disabled {
+                color: rgba(0, 0, 0, .8) !important;
+                a {
+                    color: rgba(0, 0, 0, .8) !important;
+                }
+            }
+
             // height: 65vh;
             // overflow-y: scroll;
         }
