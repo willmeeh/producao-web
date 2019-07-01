@@ -21,8 +21,8 @@ class Home extends Component {
                 </div>
 
                 <Link to="/planta">
-                    <Button 
-                        className="botao-iniciar-tour" 
+                    <Button
+                        className="botao-iniciar-tour"
                         size="large"
                         onClick={this.handleIniciarHistoria}
                     >
@@ -31,9 +31,9 @@ class Home extends Component {
                 </Link>
                 <Card className="home-card" bordered={false}>
                     <p>
-                        Aqui vai um unicorning texto explicando o unicorning projeto; 
-                        Acima de tudo, é fundamental ressaltar que o consenso sobre a necessidade de qualificação deve passar por modificações independentemente dos índices pretendidos. 
-                        Não obstante, a complexidade dos estudos efetuados garante a contribuição de um grupo importante na determinação das diretrizes de desenvolvimento para o futuro. 
+                        Aqui vai um unicorning texto explicando o unicorning projeto;
+                        Acima de tudo, é fundamental ressaltar que o consenso sobre a necessidade de qualificação deve passar por modificações independentemente dos índices pretendidos.
+                        Não obstante, a complexidade dos estudos efetuados garante a contribuição de um grupo importante na determinação das diretrizes de desenvolvimento para o futuro.
                     </p>
                 </Card>
             </div>

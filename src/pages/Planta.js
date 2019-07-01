@@ -22,11 +22,11 @@ class Planta extends Component {
     enterArea = (area) => {
         this.setState({ hoveredArea: area });
     }
-    
+
     leaveArea = (area) => {
         this.setState({ hoveredArea: null });
     }
-    
+
     getTipPosition = (area) => {
         return { top: `${area.center[1]}px`, left: `${area.center[0]}px` };
     }

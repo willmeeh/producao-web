@@ -14,27 +14,27 @@
         justify-content: center;
 
         /* smartphones, iPhone, portrait 480x320 phones */
-        @media (min-width:320px)  { 
+        @media (min-width:320px)  {
             height: 50vh !important;
         }
         /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-        @media (min-width:481px)  { 
+        @media (min-width:481px)  {
             height: 50vh !important;
         }
         /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-        @media (min-width:641px)  { 
+        @media (min-width:641px)  {
             height: 70vh !important;
         }
         /* tablet, landscape iPad, lo-res laptops ands desktops */
-        @media (min-width:961px)  { 
+        @media (min-width:961px)  {
             height: 80vh !important;
         }
         /* big landscape tablets, laptops, and desktops */
-        @media (min-width:1025px) { 
+        @media (min-width:1025px) {
             height: 80vh !important;
         }
         /* hi-res laptops and desktops */
-        @media (min-width:1281px) { 
+        @media (min-width:1281px) {
             height: 80vh !important;
         }
     }
@@ -47,7 +47,7 @@
         .ant-menu {
             background: rgba(185, 185, 185, 0.5) !important;
             font-weight: 900 !important;
-    
+
             color: #fff !important;
             a {
                 color: #fff !important;
@@ -66,17 +66,17 @@
 
         button {
             margin-top: 10px;
-            
+
         }
     }
 
     .comodo-background-image {
         min-height: 100%;
         min-width: 1024px;
-    
+
         width: 100%;
         height: auto;
-    
+
         position: fixed;
         top: 0;
         left: 0;
@@ -91,7 +91,7 @@
         font-weight: 900 !important;
         // background: rgba(0, 0, 0, 0.5) !important;
         // color: #fff !important;
-        
+
         z-index: 9;
     }
 }

@@ -16,21 +16,21 @@ export const ROUTES = [
 ];
 
 class MyHomeBrewRouter extends Component {
-    
+
     state = { current: null }
-    
+
     handleClick = (e) => {
         this.setState({
             current: e.key,
         });
     }
-    
+
     componentDidMount() {
         this.setState({
             current: this.props.location.pathname
         })
     }
-    
+
     createItem(text, route) {
         return (
             <Menu.Item key={route}>
@@ -39,13 +39,13 @@ class MyHomeBrewRouter extends Component {
             </Menu.Item>
         );
     }
-        
+
     createRoutes(routes) {
         return routes.map(({ path, component }, index) => (
             <Route key={"route" + index} exact path={path} component={component} />
         ));
     }
-            
+
     render() {
         return (
             <Menu
@@ -62,6 +62,5 @@ class MyHomeBrewRouter extends Component {
         );
     }
 }
-            
+
 export default withRouter(MyHomeBrewRouter);
-            
