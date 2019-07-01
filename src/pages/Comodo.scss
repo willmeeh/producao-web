@@ -7,15 +7,42 @@
 
     .video-player {
         margin: auto;
+        padding: 0 5px 10px!important;
         width: 100% !important;
         // height: 100% !important;
         height: 80vh !important;
         justify-content: center;
+
+        /* smartphones, iPhone, portrait 480x320 phones */
+        @media (min-width:320px)  { 
+            height: 50vh !important;
+        }
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+        @media (min-width:481px)  { 
+            height: 50vh !important;
+        }
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        @media (min-width:641px)  { 
+            height: 70vh !important;
+        }
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        @media (min-width:961px)  { 
+            height: 80vh !important;
+        }
+        /* big landscape tablets, laptops, and desktops */
+        @media (min-width:1025px) { 
+            height: 80vh !important;
+        }
+        /* hi-res laptops and desktops */
+        @media (min-width:1281px) { 
+            height: 80vh !important;
+        }
     }
 
     .playlist {
-        width: 160px;
         margin: auto;
+        padding: 0 5px !important;
+        text-align: center;
 
         .ant-menu {
             background: rgba(185, 185, 185, 0.5) !important;
@@ -39,6 +66,7 @@
 
         button {
             margin-top: 10px;
+            
         }
     }
 
@@ -56,7 +84,9 @@
         filter: brightness(40%);
     }
 
-    .nenhuma-cena-liberada {
+    .card-dica {
+        margin: 0 5px 10px !important;
+
         background: rgba(185, 185, 185, 0.5) !important;
         font-weight: 900 !important;
         // background: rgba(0, 0, 0, 0.5) !important;

@@ -6,6 +6,35 @@
         left: 50%; 
         top: 50%;
         transform: translateX(-50%);
+
+        /* smartphones, iPhone, portrait 480x320 phones */
+        @media (min-width:200px)  { 
+            top: 30%;
+        }
+        /* smartphones, iPhone, portrait 480x320 phones */
+        @media (min-width:320px)  { 
+            top: 30%;
+        }
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+        @media (min-width:481px)  { 
+            top: 35%;
+        }
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        @media (min-width:641px)  { 
+            top: 40%;
+        }
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        @media (min-width:961px)  { 
+            top: 50%;
+        }
+        /* big landscape tablets, laptops, and desktops */
+        @media (min-width:1025px) { 
+            top: 50%;
+        }
+        /* hi-res laptops and desktops */
+        @media (min-width:1281px) { 
+            top: 50%;
+        }
     }
 
     .logo-outer {

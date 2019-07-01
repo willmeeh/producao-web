@@ -251,7 +251,7 @@ class Comodo extends Component {
         const isTheSameRoom = currentVideo && nomeComodo === currentVideo.comodoProximoVideo;
         if (!isTheSameRoom && (currentVideo && currentVideo.messageToNextVideo)) {
             return (
-                <Card className="nenhuma-cena-liberada">
+                <Card className="card-dica">
                     <p>{!isTheSameRoom && currentVideo.messageToNextVideo}</p>
                     
                 </Card>
@@ -260,7 +260,7 @@ class Comodo extends Component {
         // Tratamento feito para apontar para a primeira cena
         else if (currentVideoOrder === 1 && nomeComodo !== 'sala-estar') {
             return (
-                <Card className="nenhuma-cena-liberada">
+                <Card className="card-dica">
                     <p>Vá para a sala de estar</p>
                 </Card>
             );
@@ -282,7 +282,7 @@ class Comodo extends Component {
                 <img className="comodo-background-image" src={backgroundImage} alt="alt"/>
                 {/* <Row type="flex" justify="center" align="middle"> */}
                 <Row>
-                    <Col lg={20} md={18} sm={15} xs={24}>
+                    <Col lg={20} md={18} sm={24} xs={24}>
                     {/* url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be'  */}
                         {
                             this.state.selectedVideo ? 
@@ -297,7 +297,7 @@ class Comodo extends Component {
                         
                         {/* <ReactPlayer url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' playing /> */}
                     </Col>
-                    <Col lg={4} md={6} sm={8} xs={24}>
+                    <Col lg={4} md={6} sm={24} xs={24}>
                         <div className="playlist">
                             <Menu 
                                 selectedKeys={selectedKeys}
