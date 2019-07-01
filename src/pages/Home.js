@@ -7,6 +7,10 @@ import { Link } from 'react-router-dom';
 import bg from '../images/img-casa-cima.jpeg';
 
 class Home extends Component {
+    handleIniciarHistoria() {
+        localStorage.setItem('currentVideoOrder', 1)
+    }
+
     render() {
         return (
             <div className="home-page">
@@ -17,7 +21,13 @@ class Home extends Component {
                 </div>
 
                 <Link to="/planta">
-                    <Button className="botao-iniciar-tour" size="large">Iniciar História</Button>
+                    <Button 
+                        className="botao-iniciar-tour" 
+                        size="large"
+                        onClick={this.handleIniciarHistoria}
+                    >
+                            Iniciar História
+                    </Button>
                 </Link>
                 <Card className="home-card" bordered={false}>
                     <p>

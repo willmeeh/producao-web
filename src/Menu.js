@@ -56,7 +56,7 @@ class MyHomeBrewRouter extends Component {
             >
                 {this.createItem('Home', '/')}
                 {this.createItem('Equipe', '/equipe')}
-                {this.createItem('Sobre', '/sobre')}
+                {/* {this.createItem('Sobre', '/sobre')} */}
                 {this.createItem('Cômodos da Casa', '/planta')}
             </Menu>
         );

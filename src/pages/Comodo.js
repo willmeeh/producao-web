@@ -11,76 +11,33 @@ import ImagemQuartoTeresa from '../images/quarto-teresa.jpeg'
 import ImagemSalaEstar from '../images/sala-estar.jpeg'
 import ImagemSalaJantar from '../images/sala-jantar.jpeg'
 
-const data = [
-    {
-        title: 'Vídeo 1',
-        icon: 'unlock'
-    },
-    {
-        title: 'Vídeo 2',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 3',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 4',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 1',
-        icon: 'unlock'
-    },
-    {
-        title: 'Vídeo 2',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 3',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 4',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 1',
-        icon: 'unlock'
-    },
-    {
-        title: 'Vídeo 2',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 3',
-        icon: 'lock'
-    },
-    {
-        title: 'Vídeo 4',
-        icon: 'lock'
-    },
-];
-
 export const COMODOS = {
     'cozinha': {
         backgroundImage: ImagemCozinha,
         name: 'Cozinha',
         videos: [
             { 
-                src: 'https://www.youtube.com/watch?v=i_Zz8mIHXWc',
-                order: 1,
-                messageToNextVideo: 'Vá para a sala de estar',
-                comodoProximoVideo: 'sala-estar'
+                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
+                order: 3,
+                messageToNextVideo: 'Vá para a sala de jantar',
+                comodoProximoVideo: 'sala-jantar'
             },
             { 
                 src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
-                order: 3,
-                messageToNextVideo: 'Assista a próxima cena deste cômodo'
+                order: 5,
+                messageToNextVideo: 'Vá para a sala de jantar',
+                comodoProximoVideo: 'sala-jantar'
             },
             { 
-                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 4,
+                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
+                order: 7,
+                messageToNextVideo: 'Vá para o quarto do bebê',
+                comodoProximoVideo: 'quarto-nene'
+            },
+            { 
+                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
+                order: 13,
+                messageToNextVideo: 'Fim.',
             }
         ]
     },
@@ -90,8 +47,9 @@ export const COMODOS = {
         videos: [
             { 
                 src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 1,
-                messageToNextVideo: 'Assista a próxima cena deste cômodo'
+                order: 2,
+                messageToNextVideo: 'Vá para a Cozinha',
+                comodoProximoVideo: 'cozinha'
             }
         ]
     },
@@ -101,8 +59,15 @@ export const COMODOS = {
         videos: [
             { 
                 src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 1,
-                messageToNextVideo: 'Assista a próxima cena deste cômodo'
+                order: 8,  // Mudar a imagem
+                messageToNextVideo: 'Vá para a sala de estar',
+                comodoProximoVideo: 'sala-estar'
+            },
+            { 
+                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be', // Muda a imagem
+                order: 12,
+                messageToNextVideo: 'Vá para a cozinha',
+                comodoProximoVideo: 'cozinha'
             }
         ]
     },
@@ -112,8 +77,9 @@ export const COMODOS = {
         videos: [
             { 
                 src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 1,
-                messageToNextVideo: 'Assista a próxima cena deste cômodo'
+                order: 10,
+                messageToNextVideo: 'Vá para a sala de jantar',
+                comodoProximoVideo: 'sala-jantar'
             }
         ]
     },
@@ -122,10 +88,16 @@ export const COMODOS = {
         name: 'Sala de Estar',
         videos: [
             { 
-                src: 'https://www.youtube.com/watch?v=g8gs1inwrdM',
-                order: 2,
-                messageToNextVideo: 'Vá para cozinha',
-                comodoProximoVideo: 'cozinha'
+                src: 'https://www.youtube.com/watch?v=hs91TFUdqdU',
+                order: 1,
+                messageToNextVideo: 'Vá para o quarto da monique',
+                comodoProximoVideo: 'quarto-monique'
+            },
+            { 
+                src: 'https://www.youtube.com/watch?v=i_Zz8mIHXWc',
+                order: 9,
+                messageToNextVideo: 'Vá para o quarto da Teresa',
+                comodoProximoVideo: 'quarto-teresa'
             }
         ]
     },
@@ -135,8 +107,21 @@ export const COMODOS = {
         videos: [
             { 
                 src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
-                order: 1,
-                messageToNextVideo: 'Assista a próxima cena deste cômodo'
+                order: 4,
+                messageToNextVideo: 'Vá para a cozinha',
+                comodoProximoVideo: 'cozinha'
+            },
+            { 
+                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
+                order: 6,
+                messageToNextVideo: 'Vá para a cozinha',
+                comodoProximoVideo: 'cozinha'
+            },
+            { 
+                src: 'https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be',
+                order: 11,
+                messageToNextVideo: 'Vá para o quarto do bebê',
+                comodoProximoVideo: 'quarto-nene'
             }
         ]
     },
@@ -146,7 +131,7 @@ class Comodo extends Component {
 
     state = {
         selectedVideo: null,
-        comodo: null
+        comodo: null,
     }
 
     createMenuItem({ src, order }) {
@@ -172,6 +157,12 @@ class Comodo extends Component {
         this.changeVideoByOrder(Number(key), this.state.comodo);
     }
 
+    cleanSelectedVideo() {
+        this.setState((state, props) => {
+            return { selectedVideo: null};
+        });
+    }
+
     changeVideoByOrder(orderParam, comodo) {
         const videoForSelect = comodo.videos.find(({ order }) => orderParam === order);
         this.setState((state, props) => {
@@ -185,9 +176,30 @@ class Comodo extends Component {
         return Number(localStorage.getItem('currentVideoOrder')) || 1;
     }
 
+    hasUnlockedVideos() {
+        const currentVideoOrder = this.getSavedVideoOrder();
+        const selectedVideo = this.state.comodo.videos.find(({ order }) => currentVideoOrder >= order);
+        return selectedVideo ? true : false;
+    }
+
+    getVideoByOrder(orderParam) {
+        
+        // console.log('orderParam', orderParam);
+        let currentVideo = null;
+        for (const key in COMODOS) {
+            const comodo = COMODOS[key];
+            const currentVideoAux = comodo.videos.find(({ order }) => orderParam === order);
+            if (currentVideoAux) {
+                currentVideo = currentVideoAux;
+            }
+        }
+        console.log('currentVideo', currentVideo);
+        return currentVideo;
+    }
+
     componentWillMount() {
         const { nomeComodo } = this.props.match.params;
-        const currentVideoOrder = this.getSavedVideoOrder();
+        // const currentVideoOrder = this.getSavedVideoOrder();
         const comodo = COMODOS[nomeComodo];
         
         // const selectedVideo = comodo.videos.find(({ order }) => currentVideoOrder === order);
@@ -196,10 +208,10 @@ class Comodo extends Component {
             return { comodo };
         });
         
-        const videoFounded = comodo.videos.find((video) => currentVideoOrder === video.order);
-        if (videoFounded) {
-            this.changeVideoByOrder(currentVideoOrder, comodo);
-        }
+        // const videoFounded = comodo.videos.find((video) => currentVideoOrder === video.order);
+        // if (videoFounded) {
+        //     this.changeVideoByOrder(currentVideoOrder, comodo);
+        // }
         // if (!videoFounded) {
         //     orderToChangeVideo = comodo.videos[0].order;
         // }
@@ -217,18 +229,41 @@ class Comodo extends Component {
         const nextVideo = this.state.comodo.videos.find((video) => nextOrderVideo === video.order);
         if (!nextVideo) {
             if (messageToNextVideo) {
-                notification.open({
-                    message: 'Atenção',
-                    description: messageToNextVideo,
-                    duration: 15,
-                    onClick: () => {
-                      console.log('Notification Clicked!');
-                    },
-                });
+                // notification.open({
+                //     message: 'Atenção',
+                //     description: messageToNextVideo,
+                //     duration: 15,
+                //     onClick: () => {
+                //       console.log('Notification Clicked!');
+                //     },
+                // });
             }
         }
-        else {
-            this.changeVideoByOrder(nextOrderVideo, this.state.comodo);
+        // else {
+        //     this.changeVideoByOrder(nextOrderVideo, this.state.comodo);
+        // }
+        this.cleanSelectedVideo();
+    }
+
+    generateCurrentCard(currentVideo) {
+        const currentVideoOrder = this.getSavedVideoOrder();
+        const { nomeComodo } = this.props.match.params;
+        const isTheSameRoom = currentVideo && nomeComodo === currentVideo.comodoProximoVideo;
+        if (!isTheSameRoom && (currentVideo && currentVideo.messageToNextVideo)) {
+            return (
+                <Card className="nenhuma-cena-liberada">
+                    <p>{!isTheSameRoom && currentVideo.messageToNextVideo}</p>
+                    
+                </Card>
+            );
+        }
+        // Tratamento feito para apontar para a primeira cena
+        else if (currentVideoOrder === 1 && nomeComodo !== 'sala-estar') {
+            return (
+                <Card className="nenhuma-cena-liberada">
+                    <p>Vá para a sala de estar</p>
+                </Card>
+            );
         }
     }
 
@@ -238,8 +273,9 @@ class Comodo extends Component {
         if (this.state.selectedVideo) {
             selectedKeys = [String(this.state.selectedVideo.order)]
         }
-        // console.log('nomeComodo', nomeComodo);
-        // console.log('backgroundImage', backgroundImage);
+
+        const currentVideoOrder = this.getSavedVideoOrder();
+        const previousVideo = this.getVideoByOrder(currentVideoOrder -1);
 
         return (
             <div className="comodo-page">
@@ -256,9 +292,7 @@ class Comodo extends Component {
                                 onEnded={this.handleOnVideoEnd.bind(this)}
                             />
                             :
-                            <Card className="nenhuma-cena-liberada">
-                                <p>Nenhuma cena liberada para este cômodo</p>
-                            </Card>
+                            this.generateCurrentCard(previousVideo)
                         }
                         
                         {/* <ReactPlayer url='https://www.youtube.com/watch?v=wtZNFVJl2KE&feature=youtu.be' playing /> */}
