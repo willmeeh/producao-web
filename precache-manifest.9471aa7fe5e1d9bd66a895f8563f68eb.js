@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "254337c0fea6f8bc83b29dc6210e9452",
+    "revision": "5bb5e37d8cb24de95b4557d46fbcfd62",
     "url": "/producao-web/index.html"
   },
   {
-    "revision": "904622e235613bfc3b97",
+    "revision": "315e43f1801d7522b357",
     "url": "/producao-web/static/css/2.59ca6ef4.chunk.css"
   },
   {
-    "revision": "7d039f73f8ca0d2a329a",
-    "url": "/producao-web/static/css/main.4271f63b.chunk.css"
+    "revision": "44c20f06bcb7d88fb20e",
+    "url": "/producao-web/static/css/main.0e59128d.chunk.css"
   },
   {
-    "revision": "904622e235613bfc3b97",
-    "url": "/producao-web/static/js/2.189b3bae.chunk.js"
+    "revision": "315e43f1801d7522b357",
+    "url": "/producao-web/static/js/2.44b7ffa5.chunk.js"
   },
   {
-    "revision": "7d039f73f8ca0d2a329a",
-    "url": "/producao-web/static/js/main.3895f32f.chunk.js"
+    "revision": "44c20f06bcb7d88fb20e",
+    "url": "/producao-web/static/js/main.b9f9bc0d.chunk.js"
   },
   {
     "revision": "d7d07e5018289c38291e",
@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/producao-web/static/media/cozinha.49ff0d25.jpeg"
   },
   {
+    "revision": "d003ca8b1fcb0014d33edb3f395cfc56",
+    "url": "/producao-web/static/media/cozinha2.d003ca8b.jpeg"
+  },
+  {
     "revision": "84b47622df595992a38d13751807b97d",
     "url": "/producao-web/static/media/eduarda.84b47622.jpeg"
   },
@@ -56,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/producao-web/static/media/milena.29edce5b.jpeg"
   },
   {
+    "revision": "31809e670352962023f4114d9d8955ef",
+    "url": "/producao-web/static/media/quarto-monique-2.31809e67.jpeg"
+  },
+  {
     "revision": "4a3142e307c8b5e9fdca68bd73aecb0f",
     "url": "/producao-web/static/media/quarto-monique.4a3142e3.jpeg"
   },
@@ -64,8 +72,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/producao-web/static/media/quarto-nene.66ba64db.jpeg"
   },
   {
+    "revision": "66d833bc230040202ee93a72cb697099",
+    "url": "/producao-web/static/media/quarto-nene2.66d833bc.jpeg"
+  },
+  {
+    "revision": "acc97cf88d86bc4ab6a6f5f634b4a8e0",
+    "url": "/producao-web/static/media/quarto-nene3.acc97cf8.jpeg"
+  },
+  {
     "revision": "c8bbcef22ecabfe0461382334de4ddcc",
     "url": "/producao-web/static/media/quarto-teresa.c8bbcef2.jpeg"
+  },
+  {
+    "revision": "c4d8ad10ee45f5269a74a5976e4caf04",
+    "url": "/producao-web/static/media/quarto-teresa2.c4d8ad10.jpeg"
   },
   {
     "revision": "ea188cf61abd31ef396d57552afa7449",
